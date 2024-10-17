@@ -1,0 +1,1017 @@
+/* Custom styles */
+.hero {
+    background-blend-mode: overlay;
+}
+
+/* Custom styles for the About section */
+.about-section {
+    background-color: #1a202c; /* Dark background color */
+    color: white; /* Text color */
+}
+.about-section .title {
+    display: flex;
+    align-items: center;
+}
+.about-section .title div {
+    height: 2px;
+    width: 40px;
+    background-color: #f6ad55; /* Yellow color */
+    margin-right: 5px;
+}
+.about-section .buttons button {
+    margin-right: 8px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 0px; /* Adjust the value based on the height of your header */
+}
+
+
+.icon{
+    background: linear-gradient(
+                to right, right, #f32170, #ff6b08, #bdff08, #66dde6, #b704e4);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+      
+}
+
+.g{
+    background: linear-gradient(
+                to right, right, #f32170, #ff6b08, #bdff08, #66dde6, #b704e4);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+}
+
+
+
+ /* CSS Animations */
+ .animation-container {
+    animation: moveUpAnimation 2s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes moveUpAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* items styles */
+.work-section {
+    padding: 4rem 0;
+}
+.work-categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.work-category {
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+}
+.work-category.active {
+    border-bottom-color: #ffc107; /* Yellow color */
+}
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.work-item:hover img {
+    transform: scale(1.1);
+}
+.work-item .work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.work-item:hover .work-overlay {
+    opacity: 1;
+}
+.work-item .work-overlay h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.load-more-button {
+    
+    display: block;
+    margin: 2rem auto;
+    padding: 0.6rem 1.5rem;
+    background-color: #f7920d; 
+    color: #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+    background-color: #d17906;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax() values for desired image size */
+    grid-gap: 10px;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.work-item img {
+    width: 100%; /* Image width adjusts to container width */
+    height: auto; /* Image height adjusts proportionally */
+}
+
+
+
+/* work-description styles*/
+.work-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center; /* Center align text */
+}
+
+.work-description {
+    font-size:16px;
+    font-weight: bold;
+    margin-top: 5px; /* Add space above the description */
+    white-space: pre-line; /* Preserve line breaks in the description */
+}
+
+
+
+
+
+/* responsive css*/
+@media screen and (max-width: 768px) { /* For smaller screens */
+    .work-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 5px;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default image spacing */
+  }
+
+
+
+
+
+
+
+
+ /* responsive css*/
+  /* Ensure box-sizing includes padding and border in element's total width and height */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font size and line height for the body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images and iframes responsive */
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fluid grid system using percentages */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Example responsive classes for different screen sizes */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+    }
+    .col-sm-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 33.33%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.67%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+    }
+    .col-lg-9 {
+        flex: 0 0 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2 {
+        flex: 0 0 16.67%;
+    }
+    .col-xl-10 {
+        flex: 0 0 83.33%;
+    }
+}
+
+/* Typography adjustments */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Utility classes for margin and padding */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.pt-1 { padding-top: 0.25rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pt-3 { padding-top: 1rem; }
+.pt-4 { padding-top: 1.5rem; }
+.pt-5 { padding-top: 3rem; }
+
+
+
+table, th, td {
+   
+  }
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Typography */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Utility Classes */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.pt-1 { padding-top: 0.25rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pt-3 { padding-top: 1rem; }
+.pt-4 { padding-top: 1.5rem; }
+.pt-5 { padding-top: 3rem; }
+
+/* Hero Section */
+.hero {
+    background-blend-mode: overlay;
+}
+
+/* About Section */
+.about-section {
+    background-color: #1a202c; /* Dark background color */
+    color: white; /* Text color */
+}
+
+.about-section .title {
+    display: flex;
+    align-items: center;
+}
+
+.about-section .title div {
+    height: 2px;
+    width: 40px;
+    background-color: #f6ad55; /* Yellow color */
+    margin-right: 8px;
+}
+
+.about-section .buttons button {
+    margin-right: 8px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 0px; /* Adjust the value based on the height of your header */
+}
+
+/* Icon and Text Gradients */
+.icon, .g {
+    background: linear-gradient(to right, #f32170, #ff6b08, #bdff08, #66dde6, #b704e4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* CSS Animations */
+.animation-container {
+    animation: moveUpAnimation 2s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes moveUpAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Work Section */
+.work-section {
+    padding: 4rem 0;
+}
+
+.work-categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-category {
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+}
+
+.work-category.active {
+    border-bottom-color: #ffc107; /* Yellow color */
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.work-item img {
+    width: 100%; /* Image width adjusts to container width */
+    height: auto; /* Image height adjusts proportionally */
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+}
+
+.work-item .work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work-item:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-item .work-overlay h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.load-more-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.6rem 1.5rem;
+    background-color: #f7920d;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+    background-color: #d17906;
+}
+
+/* Contact Section */
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .row {
+        margin: -10px;
+    }
+
+    .col {
+        padding: 10px;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .about-section .title div {
+        height: 2px;
+        width: 30px;
+    }
+
+    .about-section .buttons button {
+        margin-right: 5px;
+    }
+
+    .work-categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .about-section .title div {
+        height: 2px;
+        width: 20px;
+    }
+
+    .about-section .buttons button {
+        margin-right: 2px;
+    }
+
+    .work-categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+/* Add additional media queries for larger screens if needed */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 25%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .col-xl-2 {
+        flex: 0 0 16.67%;
+    }
+
+    .col-xl-10 {
+        flex: 0 0 83.33%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General font size settings */
+body {
+    font-size: 16px;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Smaller font size for phones */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .about-section .title div {
+        width: 30px;
+        margin-bottom: 4px;
+    }
+
+    .about-section .buttons button {
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px; /* Default font size for tablets */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about-section .title div {
+        width: 35px;
+        margin-bottom: 6px;
+    }
+
+    .about-section .buttons button {
+        margin-right: 4px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (min-width: 901px) {
+    body {
+        font-size: 18px; /* Larger font size for desktops */
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .about-section .title div {
+        width: 40px;
+        margin-right: 8px;
+    }
+
+    .about-section .buttons button {
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px; /* Even larger font size for very large screens */
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .about-section .title div {
+        width: 50px;
+    }
+
+    .about-section .buttons button {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* Update for Home Section */
+.hero {
+    padding: 4rem 1rem; /* Adjust padding for better spacing on small screens */
+}
+
+.hero .animated-text {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+.hero .animated-text .text-6xl {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+}
+
+.hero button.animated-text {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 0.75rem 2rem; /* Adjust button padding for smaller screens */
+}
+
+/* Adjust margins for smaller screens */
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .hero .animated-text {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero .animated-text .text-6xl {
+        font-size: 2.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero button.animated-text {
+        font-size: 1.25rem; /* Smaller font size for smaller screens */
+        padding: 0.5rem 1.5rem; /* Reduce button padding for smaller screens */
+    }
+}
+
+
+/*-----------------------------------------------*/
+/* Update for Navigation Bar */
+header {
+    padding: 1rem; /* Adjust padding for better spacing on smaller screens */
+}
+
+header .text-4xl {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+header .text-xl {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+}
+
+header ul {
+    gap: 0.5rem; /* Adjust gap between navigation items for smaller screens */
+}
+
+header li {
+    margin-right: 0.5rem; /* Reduce margin between navigation items for smaller screens */
+}
+
+/* Adjust navigation item padding and font size for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    header .text-4xl {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    header .text-xl {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+    }
+
+    header ul {
+        gap: 0.1rem; /* Reduce gap between navigation items for smaller screens */
+    }
+
+    header li {
+        margin-right: 0.25rem; /* Further reduce margin between navigation items for smaller screens */
+    }
+}
+
+/*------------------------------*/
+/* Update for Home Section Text and Buttons Alignment on Small Screens */
+@media only screen and (max-width: 768px) {
+    .hero {
+        min-height: 90vh; /* Increase the minimum height to full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Align items to the left */
+        padding-left: 1rem; /* Add padding to the left for better spacing */
+    }
+
+    .hero .animated-text {
+        text-align: left; /* Align text to the left */
+    }
+
+    .hero .animated-text .text-4xl {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 0.5rem; /* Reduce bottom margin for tighter spacing */
+    }
+
+    .hero .animated-text .text-6xl {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero .animated-text .text-3xl {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        color: #f6e05e; /* Example: Change text color for emphasis */
+    }
+
+    .hero button.animated-text {
+        font-size: 1.25rem; /* Adjust button font size for smaller screens */
+        padding: 0.75rem 1.5rem; /* Adjust button padding for smaller screens */
+        margin-top: 1rem; /* Increase top margin for better spacing */
+    }
+}
+
+
+/*--------------------------------------------------*/
+/* Update for About Section Responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .about-section .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+        max-width: 100%; /* Ensure container takes full width */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .about-section .text-left {
+        text-align: left; /* Align text to the left */
+    }
+
+    .about-section .animated-text {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+
+    .about-section .work-categories {
+        flex-direction: column; /* Stack categories vertically on smaller screens */
+        gap: 1rem; /* Adjust gap between categories */
+    }
+
+    .about-section .work-category {
+        padding: 0.5rem 1rem; /* Adjust padding for category buttons */
+    }
+}
+
+
+/* Update for About Section Responsiveness */
+@media only screen and (max-width: 767px) {
+    .about-section .container {
+        margin-left: auto;  /* Center container horizontally */
+        margin-right: auto; /* Center container horizontally */
+        text-align: center; /* Center text */
+    }
+}
+
+
+/*----------------------------*/
+/* Update for Works Section Responsiveness */
+@media only screen and (max-width: 768px) {
+    .works-section {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .works-section .work-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+        gap: 1rem; /* Adjust gap between grid items */
+    }
+
+    .works-section .work-item img {
+        height: auto; /* Ensure images maintain aspect ratio */
+    }
+
+    .works-section .load-more-button {
+        margin-top: 2rem; /* Increase top margin for better spacing */
+        padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+        font-size: 1rem; /* Decrease font size for smaller screens */
+    }
+}
+
