@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navigation Bar -->
+<header class="bg-gray-900 text-white p-5 shadow-yellow-950">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-bold text-yellow-600">S.</h1>
+        <nav class="header">
+            <ul class="flex space-x-4 text-xl">
+                <li><a href="#home" class="px-4 py-2 bg-gray-900 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300">Home</a></li>
+                <li><a href="#about" class="px-4 py-2 bg-gray-900 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300">About</a></li>
+                <li><a href="#works" class="px-4 py-2 bg-gray-900 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300">Works</a></li>
+                <li><a href="#contact" class="px-4 py-2 bg-gray-900 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Home Section --> 
+<section id="home" class="hero bg-gray-900 text-white h-screen flex items-center justify-center">
+    <div class="text-left animation-container">
+
+        <p class="text-4xl text-left animated-text">Hi there!</p>
+        <h2 class="animated-text">
+            <span class="text-6xl mb-4 text-white font-bold">I AM </span> 
+            <span class="text-6xl mb-4 text-yellow-600 font-bold">Shakya Jayawickrama</span>
+        </h2>
+        <div class="g animated-text">
+            <p class="text-3xl text-yellow-600 text-left">Portfolio 2024</p>
+        </div>
+
+        <!-- Social Media Buttons and Download CV Button in Horizontal Line -->
+        <div class="flex space-x-4 mt-5 items-center">
+            <!-- LinkedIn Button with Circle -->
+            <a href="https://www.linkedin.com/in/jayawickrama/" target="_blank" class="p-2 rounded-full text-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition duration-300 border-2 border-white hover:bg-yellow-500 hover:text-gray-900" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                <i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
+            </a>
+            <!-- Instagram Button with Circle -->
+            <a href="https://www.behance.net/shakyajayawickrama" target="_blank" class="p-2 rounded-full text-white hover:opacity-90 transition duration-300 border-2 border-white hover:bg-yellow-500 hover:text-gray-900" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                <i class="fab fa-behance"></i> <!-- Instagram Icon -->
+            </a>
+            <!-- Facebook Button with Circle -->
+            <a href="https://www.facebook.com/profile.php?id=61561823998182" target="_blank" class="p-2 rounded-full text-white hover:opacity-90 transition duration-300 border-2 border-white hover:bg-yellow-500 hover:text-gray-900" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+            </a>
+            <!-- Download CV Button -->
+            <a href="#contact" class="px-6 py-2 bg-gradient-to-r from-pink-600 to-red-500 text-white rounded-full hover:opacity-50 transition duration-300 ml-4 hover:text-gray-900">
+                Contact Me
+            </a>
+        </div>
+        
+       
+        <!--<div class="mb-1"></div>
+        <button class="px-4 py-2 mt-5 text-xl bg-transparent border border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300 animated-text">
+            <a href="#contact">Contact Me</a>
+        </button>-->
+
+    </div>
+</section>
+
+
+
+
+<!-- About Section -->
+<section id="about" class="bg-gray-100 py-16 text-gray-900 flex items-center justify-center" data-aos="fade-up">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div class="text-left md:w-1/2 ml-20 animated-text">
+            <div class="flex items-center mb-4">
+                <h2 class="text-4xl font-bold text-left">ABOUT ME</h2>
+                <div class="text-left bg-yellow-500 h-1 w-16 mx-auto mb-4 -mx-36 mt-16"></div>
+            </div>
+            <div class="mb-8"></div>
+            <p class="mb-4 text-xl animation-text">
+                 I'm Shakya Jayawickrama, a passionate and driven Computer Science undergraduate with a keen interest in graphic design, web design and development. I completed academic activities for my Bachelor's degree in Physical Science at the University of Kelaniya Sri Lanka, where I have been honing my skills in designing, programming and problem-solving.
+            </p>
+
+            <div class="mb-8"></div>
+            <div class="flex space-x-4 text-xl animation-text">
+                <button class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-full hover:bg-yellow-600 transition duration-300"><a href="https://www.behance.net/shakyajayawic" target="_blank">UI/UX Design</a></button>
+                <a href="https://rb.gy/8i331c" target="_blank" download><button class="px-4 py-2 bg-transparent border border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-gray-900 transition duration-300">Download CV</button></a>
+            </div>
+            <img src="images/More.png">
+
+        </div>
+        <div class="mt-8 md:mt-0 md:w-1/2 text-center animated-text">
+            <img src="images/Frame 15.png" alt="About Me Image" class="w-61 mx-auto">
+        </div>
+    </div>   
+</section>
+
+
+
+
+<!-- Works Section -->
+<section id="works" class="py-16 bg-gray-200 text-gray-900">
+    <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-center mb-4">PORTFOLIO</h2>
+    <div class="bg-yellow-500 h-1 w-16 mx-auto -mt-2 mb-4"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+        <div class="mb-6"></div>
+
+
+          
+
+    <div class="work-categories mt-8 font-bold text-gray-900">
+        <div class="work-category active" data-category="all">ALL</div>
+        <div class="work-category" data-category="artworks">ART WORKS</div>
+        <div class="work-category" data-category="Branding">BRANDING</div>
+        <div class="work-category" data-category="Logo">LOGO DESIGN</div> 
+    </div>
+
+    <div class="work-grid">
+        <!-- Work items will be loaded here -->
+    </div>
+    <button class="load-more-button text-xl">View More</button>
+</div>
+</section>
+
+<!--<section id="tools" class="bg-gray-200 py-16 text-gray-900 flex items-center justify-center" data-aos="fade-up">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div class="text-left md:w-1/2 ml-20 animated-text">
+            <div class="flex items-center mb-4">
+                <div><P class="text-xl animation-text font-bold">My Favourite Tools</P>
+                    <img src="images/Group 12.png" alt="tools" class="w-61">
+                </div>
+            </div>
+        </div> 
+    </div>   
+</section>-->
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-900 py-16 text-white">
+    <div class="container mx-auto flex flex-col items-center">
+        <div class="lg:w-2/3 text-center">
+            <h2 class="text-4xl font-bold mb-6">CONTACT ME</h2>
+            <div class="bg-yellow-500 h-1 w-16 mx-auto -mt-4 mb-3"></div>
+            <div class="mt-7 text-xl">     
+                <a href="mailto:jayawickrama9999@gmail.com"><p class="flex items-center justify-center mb-2"><i class="fas fa-envelope mr-2"></i> jayawickrama9999@gmail.com</p></a>
+                <a href="https://www.linkedin.com/in/jayawickrama/" target="_blank"><p class="flex items-center justify-center mb-2"><i class="fab fa-linkedin mr-2"></i> https://www.linkedin.com/in/jayawickrama/</p></a>
+                <p class="flex items-center justify-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> F/1/3, Randhiwala, Mawanella</p>
+                <!--<p class="flex items-center justify-center mb-2"><i class="fas fa-phone mr-2"></i> +94 775588172</p>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-9 -mt-8">
+    <div class="container mx-auto flex flex-col items-center">
+        <div class="text-center">
+            <div class="icon">
+            <div class="flex space-x-6 mt-2"> <!-- Changed 'justify-center' to 'justify-end' -->
+            <table cellspacing="15" style="width:100%">
+                <tr>
+                    <td><a href="https://github.com/jayawic-ps19176" target="_blank" class="text-gray-400 hover:text-white text-4xl"><i class="fab fa-github"></i></a></td>
+                    <td><a href="https://www.instagram.com/shakya_jayawickrama/?hl=en" target="_blank" class="text-gray-400 hover:text-white text-4xl"><i class="fab fa-instagram"></i></a></td>
+                    <td><a href="https://www.facebook.com/profile.php?id=61561823998182" target="_blank" class="text-gray-400 hover:text-white text-4xl"><i class="fab fa-facebook-f"></i></a></td>
+                    <td><a href="https://www.behance.net/shakyajayawickrama" target="_blank" class="text-gray-400 hover:text-white text-4xl"><i class="fab fa-behance"></i></a> </td>
+                </tr>
+            </table>          
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<script src="script.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // duration of the animation
+        once: true, // animation only happens once while scrolling down
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
